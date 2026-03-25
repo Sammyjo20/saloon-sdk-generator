@@ -16,7 +16,7 @@ All notable changes to this project will be documented in this file.
 - Updated test assertions to match new dependency constraints
 
 ### Credits
-- Thanks to @glennjacobs for Laravel 13 support in PR #39
+- Thanks to @brandonjjon for Laravel 13 support in PR #39
 
 ## [1.4.2] - 2025-11-17
 
