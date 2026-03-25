@@ -45,7 +45,7 @@ it('generates composer.json without pest tests', function () {
     expect($composerData['name'])->toBe('acme/test-api');
     expect($composerData['description'])->toBe('Test API SDK');
     expect($composerData['type'])->toBe('library');
-    expect($composerData['require']['php'])->toBe('^8.1');
+    expect($composerData['require']['php'])->toBe('^8.2');
     expect($composerData['require']['saloonphp/saloon'])->toBe('^3.0');
     expect($composerData['require']['spatie/laravel-data'])->toBe('^3.0|^4.0');
     expect($composerData['autoload']['psr-4'])->toBe(['Acme\\TestSDK\\' => 'src/']);
