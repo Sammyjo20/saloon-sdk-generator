@@ -26,7 +26,7 @@ class ComposerGenerator implements PostProcessor
             'description' => "{$specification->name} SDK",
             'type' => 'library',
             'require' => [
-                'php' => '^8.1',
+                'php' => '^8.2',
                 'saloonphp/saloon' => '^3.0',
                 'spatie/laravel-data' => '^3.0|^4.0',
             ],
@@ -88,8 +88,8 @@ class ComposerGenerator implements PostProcessor
     {
         if ($this->pestEnabled) {
             return [
-                'pestphp/pest' => '^2.0',
-                'orchestra/testbench' => '^8.0|^9.0',
+                'pestphp/pest' => '^2.0|^3.0',
+                'orchestra/testbench' => '^8.0|^9.0|^10.0',
                 'saloonphp/laravel-plugin' => '^3.0',
                 'spatie/laravel-data' => '^3.0|^4.0',
                 'vlucas/phpdotenv' => '^5.6',
@@ -97,7 +97,7 @@ class ComposerGenerator implements PostProcessor
         }
 
         return [
-            'phpunit/phpunit' => '^10.0|^11.0',
+            'phpunit/phpunit' => '^10.0|^11.0|^12.0',
         ];
     }
 }
