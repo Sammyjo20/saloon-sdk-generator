@@ -51,7 +51,7 @@ it('generates composer.json without pest tests', function () {
     expect($composerData['autoload']['psr-4'])->toBe(['Acme\\TestSDK\\' => 'src/']);
 
     // Should have PHPUnit as default when no Pest
-    expect($composerData['require-dev']['phpunit/phpunit'])->toBe('^10.0|^11.0');
+    expect($composerData['require-dev']['phpunit/phpunit'])->toBe('^10.0|^11.0|^12.0');
     expect($composerData['scripts']['test'])->toBe('vendor/bin/phpunit');
 });
 
@@ -107,8 +107,8 @@ it('generates composer.json with pest tests', function () {
     $composerData = json_decode($composerFile->file, true);
 
     // Should have Pest dependencies
-    expect($composerData['require-dev']['pestphp/pest'])->toBe('^2.0');
-    expect($composerData['require-dev']['orchestra/testbench'])->toBe('^8.0|^9.0');
+    expect($composerData['require-dev']['pestphp/pest'])->toBe('^2.0|^3.0');
+    expect($composerData['require-dev']['orchestra/testbench'])->toBe('^8.0|^9.0|^10.0');
     expect($composerData['require-dev']['saloonphp/laravel-plugin'])->toBe('^3.0');
     expect($composerData['require-dev']['vlucas/phpdotenv'])->toBe('^5.6');
     expect($composerData['require-dev']['spatie/laravel-data'])->toBe('^3.0|^4.0');

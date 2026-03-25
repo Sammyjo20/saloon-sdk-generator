@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.5.0] - 2026-03-25
+
+### Added
+- Laravel 13 support: widened `illuminate/http` to `^13.0`
+- Widened `spatie/laravel-data` to `^3.10|^4.0` (v4 supports Laravel 13)
+- Widened `laravel-zero/framework` dev dep to `^10.3.0|^12.0`
+- Widened `pestphp/pest` dev dep to `^2.28.0|^3.0`
+
+### Changed
+- Bumped generated SDK PHP minimum to `^8.2`
+- Widened generated SDK dev dependencies: `pestphp/pest ^2.0|^3.0`, `orchestra/testbench ^8.0|^9.0|^10.0`, `phpunit/phpunit ^10.0|^11.0|^12.0`
+- Updated test assertions to match new dependency constraints
+
+### Credits
+- Thanks to @glennjacobs for Laravel 13 support in PR #39
+
 ## [1.4.2] - 2025-11-17
 
 ### Changed
